@@ -7,7 +7,7 @@ const allComments = [];
 
 videos.forEach((video) => {
   const payload = {
-    videoId: video,
+    videoId: video.id,
     mustSetCookie: true,
     httpsAgent: null
   }
