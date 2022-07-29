@@ -1,0 +1,24 @@
+{
+  "name": "youtube-comments",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/quicoto/youtube-comments.git"
+  },
+  "keywords": [],
+  "type": "module",
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/quicoto/youtube-comments/issues"
+  },
+  "homepage": "https://github.com/quicoto/youtube-comments#readme",
+  "dependencies": {
+    "@freetube/yt-comment-scraper": "^6.1.0"
+  }
+}
