@@ -14,14 +14,13 @@ videos.forEach((video) => {
 
   ytcm.getComments(payload).then((commentsData) => {
     commentsData.comments.forEach((comment) => {
-      const replies = [];
-
       payload.replyToken = comment.replyToken;
 
       ytcm.getCommentReplies(payload).then((repliesData) =>{
         comment._replies = repliesData.comments
+
       }).catch((error)=>{
-          console.log(error);
+        console.log(error);
       });
 
       allComments.push(comment);

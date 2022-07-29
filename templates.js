@@ -1,8 +1,15 @@
 function commentTemplate(comment) {
-  const author = `<h4>${comment.author}</h4>`;
-  const text = `<p>${comment.text}</p>`;
+  const author = `<h4>${comment.author} <time>${comment.time}</time> </h4>`;
+  const text = `<blockquote>${comment.text}</blockquote>`;
+  let replies = '';
 
-  return `<div class="comment">${author}${text}</div>`;
+  if (comment._replies) {
+    const items = comment._replies.map((comment) => `<li>${commentTemplate(comment)}</li>`).join('\n');
+
+    replies = `<ol>${items}</ol>`;
+  }
+
+  return `<div class="comment">${author}${text}${replies}</div>`;
 }
 
 export function listTemplate(comments) {
