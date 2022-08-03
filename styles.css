@@ -1,0 +1,88 @@
+:root {
+  --primary: #34495E;
+}
+
+html {
+  font-size: 18px;
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
+body {
+  font-size: 1rem;
+  background: var(--primary);
+}
+
+main {
+  max-width: 1200px;
+  margin: 0 auto;
+  background: white;
+  padding: 1.5rem;
+}
+
+header {
+  border-bottom: 2px solid var(--primary);
+}
+
+small {
+  font-size: 70%;
+}
+
+h1 {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 0 1rem;
+  align-items: center;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.list {
+  margin-bottom: 1.5rem;
+}
+
+.comment {
+  flex-grow: 1;
+}
+
+.comment--host {
+  background: #2ECC71;
+  padding: 0 1rem;
+}
+
+.author {
+  display: flex;
+  justify-content: space-between;
+}
+
+time {
+  font-size: 80%;
+}
+
+footer {
+  border-top: 2px solid var(--primary);
+  padding-top: 1.5rem;
+  text-align: center;
+}
+
+ol {
+  padding-left: 0
+}
+
+ol>li {
+  background: #BDC3C7;
+  padding: 0 1rem;
+  margin-bottom: 1.5rem;
+  display: flex;
+}
+
+blockquote {
+  display: block;
+  font-style: italic;
+  margin: 0 0 1rem 0;
+}
