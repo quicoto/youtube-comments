@@ -5,6 +5,11 @@ let comments = JSON.parse(readFile('./public/output.json'));
 
 let template = readFile('template.html');
 
-template = template.replace('%LIST%', listTemplate(comments));
+let lists = '';
+
+lists += listTemplate({ "title": 'My video title', "id": "123"}, comments);
+lists += listTemplate({ "title": 'Another video', "id": "456"}, comments);
+
+template = template.replace('%LIST%', lists);
 
 createFile('./public/index.html', template);

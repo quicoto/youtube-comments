@@ -3,9 +3,8 @@ import { createFile, readFile } from './utils.js'
 import { listTemplate } from './templates.js'
 
 const videos = JSON.parse(readFile('videos.json')).videos;
-const allComments = [];
 
-videos.forEach((video) => {
+function getVideoComments(video) {
   const videoComments = [];
   const payload = {
     videoId: video.id,
@@ -13,14 +12,16 @@ videos.forEach((video) => {
     httpsAgent: null
   }
 
-  ytcm.getComments(payload).then((commentsData) => {
+  return ytcm.getComments(payload).then((commentsData) => {
     const repliesPromises = [];
     videoComments.push(...commentsData.comments);
 
     commentsData.comments.forEach((comment) => {
-      payload.replyToken = comment.replyToken;
+      if (comment.replyToken) {
+        payload.replyToken = comment.replyToken;
 
-      repliesPromises.push(ytcm.getCommentReplies(payload));
+        repliesPromises.push(ytcm.getCommentReplies(payload));
+      }
     });
 
     return Promise.all(repliesPromises).then((repliesData) => {
@@ -31,16 +32,24 @@ videos.forEach((video) => {
       return videoComments;
     });
   })
-  .then((comments) => {
-    let template = readFile('template.html');
-
-    template = template.replace('%LIST%', listTemplate(comments));
-
-    createFile('./public/index.html', template);
-    createFile('./public/output.json', JSON.stringify(comments));
-  })
   .catch((error)=> {
     console.log(error);
   })
-});
+}
 
+async function asyncCall() {
+  let template = readFile('template.html');
+  let lists = '';
+
+  for (const video of videos) {
+    const comments = await getVideoComments(video);
+
+    lists += listTemplate(video, comments);
+  }
+
+  template = template.replace('%LIST%', lists);
+
+  await createFile('./public/index.html', template);
+}
+
+asyncCall();

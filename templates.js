@@ -19,7 +19,10 @@ function commentTemplate(comment) {
   return `<div class="${commentClass.join(' ')}">${author}${text}${replies}</div>`;
 }
 
-export function listTemplate(comments) {
+export function listTemplate(video, comments) {
   const items = comments.map((comment) => `<li>${commentTemplate(comment)}</li>`).join('\n');
-  return `<ol>${items}</ol>`;
+  return `
+  <h2>📺 <a target="_blank" title="${video.title}" href="https://www.youtube.com/watch?v=${video.id}">${video.title}</a></h2>
+  <ol>${items}</ol>
+  <hr>`;
 }
