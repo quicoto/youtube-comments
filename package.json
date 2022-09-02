@@ -19,6 +19,6 @@
   },
   "homepage": "https://github.com/quicoto/youtube-comments#readme",
   "dependencies": {
-    "@freetube/yt-comment-scraper": "^6.1.0"
+    "@freetube/yt-comment-scraper": "^6.2.0"
   }
 }

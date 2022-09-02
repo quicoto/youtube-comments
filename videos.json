@@ -1,6 +1,23 @@
 {
   "videos": [{
-    "title": "Ep. #1: Why should you have a blog?!",
-    "id": "0fWXs-Ada4A"
-  }]
+      "title": "Ep. #1: Why should you have a blog?!",
+      "id": "0fWXs-Ada4A"
+    },
+    {
+      "title": "Ep. #2: How to create desktop apps using Frontend stack",
+      "id": "imeNA57okXc"
+    },
+    {
+      "title": "FE Tutorials: How to create and host a blog on Github",
+      "id": "nTLzLhFG9mc"
+    },
+    {
+      "title": "FE Tutorials: JavaScript pure functions, TDD and Cypress",
+      "id": "aNr3xAS7nZU"
+    },
+    {
+      "title": "FE Tutorials: How to generate images with text using NodeJs",
+      "id": "wCkEzaSGZXM"
+    }
+  ]
 }
