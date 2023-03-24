@@ -1,47 +1,52 @@
 {
-  "videos": [{
-      "title": "Ep. #1: Why should you have a blog?!",
-      "id": "0fWXs-Ada4A"
+  "videos": [
+    {
+        "title": "Ep. #12: JavaScript debugging process",
+        "id": "FDdkzJMTnhM"
     },
     {
-      "title": "Ep. #2: How to create desktop apps using Frontend stack",
-      "id": "imeNA57okXc"
+        "title": "Ep. #11: What is a skill map and why you should have one",
+        "id": "zi-rUjfTiC4"
     },
     {
-      "title": "Ep. #3: What is a FrontEnd Developer?",
-      "id": "dbLbd14bwYw"
+        "title": "Ep. #10: Unit Testing, love it or hate it?",
+        "id": "aaTXZIWNT8c"
     },
     {
-      "title": "Ep. #4: Why Typescript",
-      "id": "7zfv9BwjgvQ"
+        "title": "Ep. #9: Remote Interviews",
+        "id": "EhxiEbXen3k"
     },
     {
-      "title": "Ep. #5: How much is too much JavaScript?",
-      "id": "jn3T50k3wko"
+        "title": "Ep. #8: We love side projects ",
+        "id": "EgXmcgywQ9M"
     },
     {
-      "title": "Ep. #6: Which CSS should you learn in 2023?",
-      "id": "q2YEoIaaN7g"
+        "title": "Ep. #7: Public speaking, knowledge sharing and why you should try it!",
+        "id": "VBecLE1DFfw"
     },
     {
-      "title": "Ep. #7: Public speaking, knowledge sharing and why you should try it!",
-      "id": "VBecLE1DFfw"
+        "title": "Ep. #6: Which CSS should you learn in 2023?",
+        "id": "q2YEoIaaN7g"
     },
     {
-      "title": "Ep. #8: We love side projects ",
-      "id": "EgXmcgywQ9M"
+        "title": "Ep. #5: How much is too much JavaScript?",
+        "id": "jn3T50k3wko"
     },
     {
-      "title": "Ep. #9: Remote Interviews",
-      "id": "EhxiEbXen3k"
+        "title": "Ep. #4: Why Typescript",
+        "id": "7zfv9BwjgvQ"
     },
     {
-      "title": "Ep. #10: Unit Testing, love it or hate it?",
-      "id": "aaTXZIWNT8c"
-    },       
+        "title": "Ep. #3: What is a FrontEnd Developer?",
+        "id": "dbLbd14bwYw"
+    },
     {
-      "title": "Ep. #11: What is a skill map and why you should have one",
-      "id": "zi-rUjfTiC4"
+        "title": "Ep. #2: How to create desktop apps using Frontend stack",
+        "id": "imeNA57okXc"
+    },
+    {
+        "title": "Ep. #1: Why should you have a blog?!",
+        "id": "0fWXs-Ada4A"
     },
     {
       "title": "FE Tutorials: How to create and host a blog on Github",
