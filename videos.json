@@ -1,6 +1,14 @@
 {
   "videos": [
     {
+        "title": "Ep. #14: FE Web Performance: the good stuff",
+        "id": "7Iva85yEhwo"
+    },
+    {
+        "title": "Ep. #13: Should you document your code?",
+        "id": "1By4CVpGitE"
+    },
+    {
         "title": "Ep. #12: JavaScript debugging process",
         "id": "FDdkzJMTnhM"
     },
