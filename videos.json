@@ -1,6 +1,10 @@
 {
   "videos": [
     {
+        "title": "Ep. #15: Is progressive enhancement worth it?",
+        "id": "juH-nXok7pw"
+    },
+    {
         "title": "Ep. #14: FE Web Performance: the good stuff",
         "id": "7Iva85yEhwo"
     },
